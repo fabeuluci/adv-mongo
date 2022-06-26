@@ -1,0 +1,24 @@
+{
+  "name": "adv-mongo",
+  "version": "1.0.2",
+  "description": "Mongodb helper",
+  "license": "MIT",
+  "author": {
+    "name": "Fabeuluci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabeuluci/adv-mongo.git"
+  },
+  "main": "./out/index.js",
+  "types": "./out/index.d.ts",
+  "scripts": {
+    "compile": "rm -rf out && tsc",
+    "watch": "rm -rf out && tsc -w"
+  },
+  "dependencies": {
+    "adv-log": "*",
+    "adv-promise": "^1.0.0",
+    "mongodb": "*"
+  }
+}
