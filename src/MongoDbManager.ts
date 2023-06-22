@@ -10,8 +10,8 @@ export interface MongoConfig {
 export class MongoDbManager {
     
     constructor(
-        private client: mongodb.MongoClient,
-        private db: mongodb.Db,
+        public readonly client: mongodb.MongoClient,
+        public readonly db: mongodb.Db,
         private collectionsMap: {[name: string]: Promise<mongodb.Collection>},
         private indexes: {[collectionName: string]: string[]},
         private idProperties: {[collectionName: string]: string},

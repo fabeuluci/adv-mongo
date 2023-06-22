@@ -108,7 +108,7 @@ export class MongoObjectQuery<T> implements ObjectQuery<T> {
 export class MongoObjectRepository<K extends string|number, V> implements ObjectRepository<K, V> {
     
     constructor(
-        private collection: mongodb.Collection,
+        public readonly collection: mongodb.Collection,
         private idProperty: keyof V,
         private session?: mongodb.ClientSession
     ) {
